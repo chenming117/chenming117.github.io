@@ -10,8 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author" content="">    
-    <link rel="shortcut icon" href="favicon.ico">  
+    <meta name="author" content="">     
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300' rel='stylesheet' type='text/css'> 
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
     <!-- Global CSS -->
@@ -27,6 +26,7 @@
 .bg-slider-wrapper .flexslider .slide.slide-3{background-position: 22% 0;}
 .section-on-bg .title{color: #ec6952;}
 .clear{clear: both;}
+#c1{height: 400px;width: 100%;}
     </style>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -61,9 +61,9 @@
                 </div><!--//navbar-header-->
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active nav-item"><a href="#">导读</a></li>
-                        <li class="nav-item"><a href="#">参观考察</a></li>
-                        <li class="nav-item"><a href="#">国际出访</a></li>
+                        <li class="active nav-item"><a href="#a">导读</a></li>
+                        <li class="nav-item"><a href="#b">参观考察</a></li>
+                        <li class="nav-item"><a href="#c">国际出访</a></li>
                         <!--<li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="signup.html">Sign Up Free</a></li>-->
                     </ul><!--//nav-->
                 </div><!--//navabr-collapse-->
@@ -96,7 +96,7 @@
             <div class="container">
                 <h2 class="title text-center">习近平的五年足迹</h2>
                 <p class="intro text-center"></p>
-                <div class="row item">
+                <div class="row item" id="a">
                     <div class="content col-xs-12 col-md-4">
                         <h3 class="title">导读</h3>
                         <div class="desc">
@@ -111,12 +111,11 @@
                     </figure>
                 </div><!--//item-->
                 
-                <div class="row item">
+                <div class="row item" id="b">
 
                     <div class="content col-xs-12">
                         <h3 class="title">参观考察</h3>
                         <div class="desc">
-                            <p>自2012年11月15日就任中共中央总书记以来，习近平近五年间在全国32个省区市进行了考察调研。</p>
                         </div>                       
                     </div><!--//content-->
                     <figure class="figure col-xs-12">
@@ -124,11 +123,26 @@
                         <figcaption class="figure-caption">参观考察足迹</figcaption>
 
                     </figure>
-
+                    
                     
                 </div><!--//item-->
-                
                 <div class="row item ">
+                    <div class="content col-xs-12 col-md-4">
+                        <h3 class="title"></h3>
+                        <div class="desc">
+                            
+                            <p>自2012年11月15日就任中共中央总书记以来，习近平近五年间在全国32个省区市进行了考察调研。</p>
+                            <p>(图中三类地区以各省人均GDP划分)</p>
+                        </div>
+                                               
+                    </div><!--//content-->
+                    <figure class="figure col-md-offset-1 col-sm-offset-0 col-xs-offset-0 col-xs-12 col-md-7">
+                        <div id="c1"></div>
+                        <figcaption class="figure-caption">参观考察地区统计</figcaption>
+                    </figure>
+                </div><!--//item-->
+                
+                <div class="row item " id="c">
                     <div class="content col-xs-12">
                         <h3 class="title">国际访问</h3>
                         <div class="desc">
@@ -162,8 +176,8 @@
                     <div class="footer-col download col-xs-12 col-md-6">
                         
                     </div><!--//download-->
-                    <div class="footer-col contact col-xs-12 col-md-6">
-                        
+                    <div class="footer-col contact col-xs-12 col-md-6" style="text-align: right;">
+                        以上数据来源于中国政府网、国家统计局
                     </div><!--//contact-->
                 </div>
             </div><!--//container-->

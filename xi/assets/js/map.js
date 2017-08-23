@@ -144,7 +144,6 @@ var data14_ = [
     [{name:'北京'},{name:'郑州',value:90}],
     [{name:'北京'},{name:'石家庄',value:80}],
     [{name:'北京'},{name:'乌鲁木齐',value:70}],
-    [{name:'北京'},{name:'郑州',value:60}],
     [{name:'北京'},{name:'上海',value:60}],
     [{name:'北京'},{name:'南京',value:60}],
     [{name:'北京'},{name:'福州',value:60}],
@@ -172,6 +171,10 @@ var data17_ = [
     [{name:'北京'},{name:'香港',value:60}]
 ];
 
+var dateData={
+    2012:{ '广州': ['12月7日-8日','在广东省进行考察']}
+}
+//var data12_ = data13_ = data14_ = data15_ = data16_ = data17_ = [];
 
 var planePath = 'path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z';
 
@@ -293,6 +296,7 @@ var mapData=[{
                  {name:'上海',value:113719},
                  {name:'北京',value:114717},
                  {name:'安徽',value:39257},
+                 {name:'辽宁',value:50287},
                  {name:'陕西',value:40437},
                  {name:'内蒙古',value:74203},
                  {name:'江西',value:40223},
@@ -329,6 +333,7 @@ var mapData=[{
                  {name:'上海',value:113719},
                  {name:'北京',value:114717},
                  {name:'安徽',value:39257},
+                 {name:'辽宁',value:50287},
                  {name:'陕西',value:40437},
                  {name:'内蒙古',value:74203},
                  {name:'江西',value:40223},
@@ -366,6 +371,7 @@ var mapData=[{
                  {name:'上海',value:113719},
                  {name:'北京',value:114717},
                  {name:'安徽',value:39257},
+                 {name:'辽宁',value:50287},
                  {name:'陕西',value:40437},
                  {name:'内蒙古',value:74203},
                  {name:'江西',value:40223},
@@ -403,6 +409,7 @@ var mapData=[{
                  {name:'上海',value:113719},
                  {name:'北京',value:114717},
                  {name:'安徽',value:39257},
+                 {name:'辽宁',value:50287},
                  {name:'陕西',value:40437},
                  {name:'内蒙古',value:74203},
                  {name:'江西',value:40223},
@@ -440,6 +447,7 @@ var mapData=[{
                  {name:'上海',value:113719},
                  {name:'北京',value:114717},
                  {name:'安徽',value:39257},
+                 {name:'辽宁',value:50287},
                  {name:'陕西',value:40437},
                  {name:'内蒙古',value:74203},
                  {name:'江西',value:40223},
@@ -477,6 +485,7 @@ var mapData=[{
                  {name:'上海',value:113719},
                  {name:'北京',value:114717},
                  {name:'安徽',value:39257},
+                 {name:'辽宁',value:50287},
                  {name:'陕西',value:40437},
                  {name:'内蒙古',value:74203},
                  {name:'江西',value:40223},
@@ -514,6 +523,7 @@ series.push(
                  {name:'上海',value:113719},
                  {name:'北京',value:114717},
                  {name:'安徽',value:39257},
+                 {name:'辽宁',value:50287},
                  {name:'陕西',value:40437},
                  {name:'内蒙古',value:74203},
                  {name:'江西',value:40223},
@@ -580,6 +590,17 @@ option1 = {
         },
         roam: true 
     },
+    // toolbox: {
+    //     show: true,
+    //     orient: 'vertical',
+    //     left: 'right',
+    //     top: 'center',
+    //     feature: {
+    //         dataView: {readOnly: false},
+    //         restore: {},
+    //         saveAsImage: {}
+    //     }
+    // },
     visualMap: {
         min: 0,
         max: 100,
@@ -590,7 +611,7 @@ option1 = {
                 ],
         splitNumber: 3,
         seriesIndex:18,
-        color: ['orangered','lightskyblue','blue'],
+        color: ['#F8A788','#C0CA91','#CA9A87'],
         textStyle: {
             color: 'red'
         }
@@ -961,6 +982,7 @@ var data17 = [
     [{name:'北京'},{name:'哈萨克斯坦-阿斯塔纳',value:50}]
 ];
 
+
 var planePath = 'path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z';
 
 var convertData = function (data) {
@@ -1254,7 +1276,7 @@ option = {
                 ],
         splitNumber: 3,
         seriesIndex:15,
-        color: ['orangered','lightskyblue','blue'],
+        color: ['#F8A788','#C0CA91','#CA9A87'],
         textStyle: {
             color: 'red'
         }
@@ -1307,5 +1329,71 @@ myChart.on('legendselectchanged',function(params){
 
 }
 
+
+function c1() {
+var dom = document.getElementById("c1");
+var myChart2 = echarts.init(dom);
+var app = {};
+var	option2 = {
+    tooltip : {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            label: {
+                backgroundColor: '#6a7985'
+            }
+        }
+    },
+    legend: {
+        data:['发达地区','中等发达地区','欠发达地区']
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    xAxis : [
+        {
+            type : 'category',
+            boundaryGap : false,
+            data : ['2012','2013','2014','2015','2016','2017']
+        }
+    ],
+    yAxis : [
+        {
+            type : 'value'
+        }
+    ],
+    series : [
+        {
+            name:'发达地区',
+            type:'line',
+            stack: '总量',
+            areaStyle: {normal: {}},
+            data:[3, 3, 6, 1, 0, 3]
+        },
+        {
+            name:'中等发达地区',
+            type:'line',
+            stack: '总量',
+            areaStyle: {normal: {}},
+            data:[0, 3, 3, 1, 2, 1]
+        },
+        {
+            name:'欠发达地区',
+            type:'line',
+            stack: '总量',
+            areaStyle: {normal: {}},
+            data:[0, 2, 0, 2, 1, 1]
+        }
+    ]
+};
+if (option2 && typeof option2 === "object") {
+    myChart2.setOption(option2, true);
+}
+}
+
 china();
 world();
+c1();
