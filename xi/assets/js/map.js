@@ -1,7 +1,7 @@
 function china(){
 
 var dom = document.getElementById("container1");
-var myChart = echarts.init(dom);
+var myChart1 = echarts.init(dom);
 var app = {};
 option = null;
 var geoCoordMap = {
@@ -120,7 +120,7 @@ var geoCoordMap = {
     '青岛': [120.4651,36.3373],
     '韶关': [113.7964,24.7028]
 };
-var data12 = [
+var data12_ = [
     [{name:'北京'}, {name:'上海',value:95}],
     [{name:'北京'}, {name:'广州',value:90}],
     [{name:'北京'}, {name:'大连',value:80}],
@@ -128,7 +128,7 @@ var data12 = [
     
 ];
 
-var data13 = [
+var data13_ = [
     [{name:'北京'},{name:'包头',value:95}],
     [{name:'北京'},{name:'昆明',value:90}],
     [{name:'北京'},{name:'广州',value:80}],
@@ -137,7 +137,7 @@ var data13 = [
     
 ];
 
-var data14 = [
+var data14_ = [
     [{name:'北京'},{name:'福州',value:95}],
     [{name:'北京'},{name:'太原',value:90}],
     [{name:'北京'},{name:'长春',value:80}],
@@ -145,7 +145,7 @@ var data14 = [
     [{name:'北京'},{name:'西安',value:60}]
     
 ];
-var data15 = [
+var data15_ = [
     [{name:'北京'}, {name:'南昌',value:60}],
     [{name:'北京'}, {name:'拉萨',value:50}],
     [{name:'北京'}, {name:'长春',value:40}],
@@ -154,7 +154,7 @@ var data15 = [
     [{name:'北京'}, {name:'常州',value:10}]
 ];
 
-var data16 = [
+var data16_ = [
     [{name:'北京'},{name:'重庆',value:50}],
     [{name:'北京'},{name:'长沙',value:40}],
     [{name:'北京'},{name:'北京',value:30}],
@@ -162,7 +162,7 @@ var data16 = [
     [{name:'北京'},{name:'大连',value:10}]
 ];
 
-var data17 = [
+var data17_ = [
    
     [{name:'北京'},{name:'成都',value:50}],
     [{name:'北京'},{name:'常州',value:40}],
@@ -193,7 +193,7 @@ var convertData = function (data) {
 
 var color = ['#a6c84c', '#ffa022', '#46bee9','#aac88c','#acc44c','#ff0000'];
 var series = [];
-[['2012年', data12],['2013年', data13], ['2014年', data14], ['2015年', data15],['2016年', data16],['2017年', data17]].forEach(function (item, i) {
+[['2012年', data12_],['2013年', data13_], ['2014年', data14_], ['2015年', data15_],['2016年', data16_],['2017年', data17_]].forEach(function (item, i) {
     series.push(
     {
         name: item[0],
@@ -358,7 +358,7 @@ series.push(
            
                     
            
-option = {
+option1 = {
     title: {
         text: '习近平参观考察行程',
         // subtext: 'from United Nations, Total population, both sexes combined, as of 1 July (thousands)',
@@ -419,52 +419,53 @@ option = {
     },
     series: series
 };
-if (option && typeof option === "object") {
-    myChart.setOption(option, true);
+if (option1 && typeof option1 === "object") {
+    myChart1.setOption(option1, true);
 }
 var isselected='2012年';
-myChart.on('legendselectchanged',function(params){
+myChart1.on('legendselectchanged',function(params){
+	console.log(params)
     switch(params.name){
         case '2012年':
-            option.legend.selected[isselected]=false;
-            option.legend.selected['2012年']=true;
+            option1.legend.selected[isselected]=false;
+            option1.legend.selected['2012年']=true;
             series[18]=mapData[0];
-            myChart.setOption(option, true);
+            myChart1.setOption(option1, true);
             isselected='2012年';
             break;
         case '2013年':
-            option.legend.selected[isselected]=false;
-             option.legend.selected['2013年']=true;
+            option1.legend.selected[isselected]=false;
+             option1.legend.selected['2013年']=true;
             series[18]=mapData[1];
-            myChart.setOption(option, true);
+            myChart1.setOption(option1, true);
             isselected='2013年';
             break;
         case '2014年':
-            option.legend.selected[isselected]=false;
-            option.legend.selected['2014年']=true;
+            option1.legend.selected[isselected]=false;
+            option1.legend.selected['2014年']=true;
             series[18]=mapData[2];
-            myChart.setOption(option, true);
+            myChart1.setOption(option1, true);
             isselected='2014年';
             break;
          case '2015年':
-            option.legend.selected[isselected]=false;
-            option.legend.selected['2015年']=true;
+            option1.legend.selected[isselected]=false;
+            option1.legend.selected['2015年']=true;
             series[18]=mapData[3];
-            myChart.setOption(option, true);
+            myChart1.setOption(option1, true);
             isselected='2015年';
             break;
          case '2016年':
-            option.legend.selected[isselected]=false;
-            option.legend.selected['2016年']=true;
+            option1.legend.selected[isselected]=false;
+            option1.legend.selected['2016年']=true;
             series[18]=mapData[4];
-            myChart.setOption(option, true);
+            myChart1.setOption(option1, true);
             isselected='2016年';
             break;
          case '2017年':
-            option.legend.selected[isselected]=false;
-            option.legend.selected['2017年']=true;
+            option1.legend.selected[isselected]=false;
+            option1.legend.selected['2017年']=true;
             series[18]=mapData[5];
-            myChart.setOption(option, true);
+            myChart1.setOption(option1, true);
             isselected='2017年';
             break;
     }
