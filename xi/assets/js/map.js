@@ -118,57 +118,58 @@ var geoCoordMap = {
     '长治': [112.8625,36.4746],
     '阳泉': [113.4778,38.0951],
     '青岛': [120.4651,36.3373],
-    '韶关': [113.7964,24.7028]
+    '韶关': [113.7964,24.7028],
+    '三亚': [109.512,18.2557],
+    '澳门': [113.5491,22.2034],
+    '香港': [114.1654,22.2784]
 };
 var data12_ = [
-    [{name:'北京'}, {name:'上海',value:95}],
-    [{name:'北京'}, {name:'广州',value:90}],
-    [{name:'北京'}, {name:'大连',value:80}],
-    [{name:'北京'}, {name:'南宁',value:70}]
+    [{name:'北京'}, {name:'广州',value:90}]
     
 ];
 
 var data13_ = [
-    [{name:'北京'},{name:'包头',value:95}],
-    [{name:'北京'},{name:'昆明',value:90}],
-    [{name:'北京'},{name:'广州',value:80}],
-    [{name:'北京'},{name:'郑州',value:70}],
-    [{name:'北京'},{name:'长春',value:60}]
+    [{name:'北京'},{name:'兰州',value:95}],
+    [{name:'北京'},{name:'三亚',value:90}],
+    [{name:'北京'},{name:'天津',value:80}],
+    [{name:'北京'},{name:'成都',value:70}],
+    [{name:'北京'},{name:'石家庄',value:60}],
+    [{name:'北京'},{name:'长沙',value:80}],
+    [{name:'北京'},{name:'济南',value:70}]  
     
 ];
 
 var data14_ = [
-    [{name:'北京'},{name:'福州',value:95}],
-    [{name:'北京'},{name:'太原',value:90}],
-    [{name:'北京'},{name:'长春',value:80}],
-    [{name:'北京'},{name:'重庆',value:70}],
-    [{name:'北京'},{name:'西安',value:60}]
+    [{name:'北京'},{name:'呼和浩特',value:95}],
+    [{name:'北京'},{name:'郑州',value:90}],
+    [{name:'北京'},{name:'石家庄',value:80}],
+    [{name:'北京'},{name:'乌鲁木齐',value:70}],
+    [{name:'北京'},{name:'郑州',value:60}],
+    [{name:'北京'},{name:'上海',value:60}],
+    [{name:'北京'},{name:'南京',value:60}],
+    [{name:'北京'},{name:'福州',value:60}],
+    [{name:'北京'},{name:'澳门',value:60}]
     
 ];
 var data15_ = [
-    [{name:'北京'}, {name:'南昌',value:60}],
-    [{name:'北京'}, {name:'拉萨',value:50}],
-    [{name:'北京'}, {name:'长春',value:40}],
-    [{name:'北京'}, {name:'包头',value:30}],
-    [{name:'北京'}, {name:'重庆',value:20}],
-    [{name:'北京'}, {name:'常州',value:10}]
+    [{name:'北京'},{name:'昆明',value:50}],
+    [{name:'北京'},{name:'杭州',value:40}],
+    [{name:'北京'},{name:'贵阳',value:30}],
+    [{name:'北京'},{name:'长春',value:20}]
 ];
 
 var data16_ = [
-    [{name:'北京'},{name:'重庆',value:50}],
-    [{name:'北京'},{name:'长沙',value:40}],
-    [{name:'北京'},{name:'北京',value:30}],
-    [{name:'北京'},{name:'丹东',value:20}],
-    [{name:'北京'},{name:'大连',value:10}]
+    [{name:'北京'}, {name:'重庆',value:60}],
+    [{name:'北京'}, {name:'合肥',value:50}],
+    [{name:'北京'}, {name:'石家庄',value:40}]
 ];
 
 var data17_ = [
    
-    [{name:'北京'},{name:'成都',value:50}],
-    [{name:'北京'},{name:'常州',value:40}],
-    [{name:'北京'},{name:'北京',value:30}],
-    [{name:'北京'},{name:'北海',value:20}],
-    [{name:'北京'},{name:'海口',value:10}]
+    [{name:'北京'},{name:'石家庄',value:50}],
+    [{name:'北京'},{name:'南宁',value:40}],
+    [{name:'北京'},{name:'澳门',value:60}],
+    [{name:'北京'},{name:'香港',value:60}]
 ];
 
 
@@ -279,21 +280,72 @@ var mapData=[{
             type: 'map',
             geoIndex: 0,
             data:[
-                 {name:'上海',value:95},
-                 {name:'广东',value:90},
-                 {name:'辽宁',value:50},
-                 {name:'广西',value:40}
+                 {name:'广东',value:73290},
+                 {name:'江苏',value:95390},
+                 {name:'山东',value:67364},
+                 {name:'浙江',value:83923},
+                 {name:'河南',value:42363},
+                 {name:'四川',value:39835},
+                 {name:'湖北',value:55196},
+                 {name:'河北',value:42866},
+                 {name:'湖南',value:46063},
+                 {name:'福建',value:74288},
+                 {name:'上海',value:113719},
+                 {name:'北京',value:114717},
+                 {name:'安徽',value:39257},
+                 {name:'陕西',value:40437},
+                 {name:'内蒙古',value:74203},
+                 {name:'江西',value:40223},
+                 {name:'广西',value:38042},
+                 {name:'天津',value:115617},
+                 {name:'重庆',value:58208},
+                 {name:'黑龙江',value:40365},
+                 {name:'吉林',value:54066},
+                 {name:'云南',value:31357},
+                 {name:'山西',value:35284},
+                 {name:'贵州',value:33274},
+                 {name:'新疆',value:40756},
+                 {name:'甘肃',value:27513},
+                 {name:'海南',value:44405},
+                 {name:'宁夏',value:47165},
+                 {name:'青海',value:43718},
+                 {name:'西藏',value:35499}
              ]
          },{
             name: '2013',
             type: 'map',
             geoIndex: 0,
             data:[
-                {name:'内蒙古',value:20},
-                {name:'云南',value:90},
-                {name:'广东',value:90},
-                {name:'河南',value:70},
-                {name:'吉林',value:60}
+                {name:'广东',value:73290},
+                 {name:'江苏',value:95390},
+                 {name:'山东',value:67364},
+                 {name:'浙江',value:83923},
+                 {name:'河南',value:42363},
+                 {name:'四川',value:39835},
+                 {name:'湖北',value:55196},
+                 {name:'河北',value:42866},
+                 {name:'湖南',value:46063},
+                 {name:'福建',value:74288},
+                 {name:'上海',value:113719},
+                 {name:'北京',value:114717},
+                 {name:'安徽',value:39257},
+                 {name:'陕西',value:40437},
+                 {name:'内蒙古',value:74203},
+                 {name:'江西',value:40223},
+                 {name:'广西',value:38042},
+                 {name:'天津',value:115617},
+                 {name:'重庆',value:58208},
+                 {name:'黑龙江',value:40365},
+                 {name:'吉林',value:54066},
+                 {name:'云南',value:31357},
+                 {name:'山西',value:35284},
+                 {name:'贵州',value:33274},
+                 {name:'新疆',value:40756},
+                 {name:'甘肃',value:27513},
+                 {name:'海南',value:44405},
+                 {name:'宁夏',value:47165},
+                 {name:'青海',value:43718},
+                 {name:'西藏',value:35499}
              ]
          },
          {
@@ -301,11 +353,36 @@ var mapData=[{
             type: 'map',
             geoIndex: 0,
             data:[
-                {name:'福建',value:95},
-                {name:'山西',value:90},
-                {name:'吉林',value:60},
-                {name:'重庆',value:50},
-                {name:'陕西',value:60}
+                {name:'广东',value:73290},
+                 {name:'江苏',value:95390},
+                 {name:'山东',value:67364},
+                 {name:'浙江',value:83923},
+                 {name:'河南',value:42363},
+                 {name:'四川',value:39835},
+                 {name:'湖北',value:55196},
+                 {name:'河北',value:42866},
+                 {name:'湖南',value:46063},
+                 {name:'福建',value:74288},
+                 {name:'上海',value:113719},
+                 {name:'北京',value:114717},
+                 {name:'安徽',value:39257},
+                 {name:'陕西',value:40437},
+                 {name:'内蒙古',value:74203},
+                 {name:'江西',value:40223},
+                 {name:'广西',value:38042},
+                 {name:'天津',value:115617},
+                 {name:'重庆',value:58208},
+                 {name:'黑龙江',value:40365},
+                 {name:'吉林',value:54066},
+                 {name:'云南',value:31357},
+                 {name:'山西',value:35284},
+                 {name:'贵州',value:33274},
+                 {name:'新疆',value:40756},
+                 {name:'甘肃',value:27513},
+                 {name:'海南',value:44405},
+                 {name:'宁夏',value:47165},
+                 {name:'青海',value:43718},
+                 {name:'西藏',value:35499}
              ]
          },
          {
@@ -313,12 +390,36 @@ var mapData=[{
             type: 'map',
             geoIndex: 0,
             data:[
-                 {name:'江西',value:60},
-                 {name:'西藏',value:50},
-                 {name:'吉林',value:60},
-                 {name:'内蒙古',value:20},
-                 {name:'重庆',value:50},
-                 {name:'江苏',value:40}
+                 {name:'广东',value:73290},
+                 {name:'江苏',value:95390},
+                 {name:'山东',value:67364},
+                 {name:'浙江',value:83923},
+                 {name:'河南',value:42363},
+                 {name:'四川',value:39835},
+                 {name:'湖北',value:55196},
+                 {name:'河北',value:42866},
+                 {name:'湖南',value:46063},
+                 {name:'福建',value:74288},
+                 {name:'上海',value:113719},
+                 {name:'北京',value:114717},
+                 {name:'安徽',value:39257},
+                 {name:'陕西',value:40437},
+                 {name:'内蒙古',value:74203},
+                 {name:'江西',value:40223},
+                 {name:'广西',value:38042},
+                 {name:'天津',value:115617},
+                 {name:'重庆',value:58208},
+                 {name:'黑龙江',value:40365},
+                 {name:'吉林',value:54066},
+                 {name:'云南',value:31357},
+                 {name:'山西',value:35284},
+                 {name:'贵州',value:33274},
+                 {name:'新疆',value:40756},
+                 {name:'甘肃',value:27513},
+                 {name:'海南',value:44405},
+                 {name:'宁夏',value:47165},
+                 {name:'青海',value:43718},
+                 {name:'西藏',value:35499}
              ]
          },
          {
@@ -326,10 +427,36 @@ var mapData=[{
             type: 'map',
             geoIndex: 0,
             data:[
-                {name:'重庆',value:50},
-                {name:'湖南',value:40},
-                {name:'北京',value:95},
-                {name:'辽宁',value:50}
+                {name:'广东',value:73290},
+                 {name:'江苏',value:95390},
+                 {name:'山东',value:67364},
+                 {name:'浙江',value:83923},
+                 {name:'河南',value:42363},
+                 {name:'四川',value:39835},
+                 {name:'湖北',value:55196},
+                 {name:'河北',value:42866},
+                 {name:'湖南',value:46063},
+                 {name:'福建',value:74288},
+                 {name:'上海',value:113719},
+                 {name:'北京',value:114717},
+                 {name:'安徽',value:39257},
+                 {name:'陕西',value:40437},
+                 {name:'内蒙古',value:74203},
+                 {name:'江西',value:40223},
+                 {name:'广西',value:38042},
+                 {name:'天津',value:115617},
+                 {name:'重庆',value:58208},
+                 {name:'黑龙江',value:40365},
+                 {name:'吉林',value:54066},
+                 {name:'云南',value:31357},
+                 {name:'山西',value:35284},
+                 {name:'贵州',value:33274},
+                 {name:'新疆',value:40756},
+                 {name:'甘肃',value:27513},
+                 {name:'海南',value:44405},
+                 {name:'宁夏',value:47165},
+                 {name:'青海',value:43718},
+                 {name:'西藏',value:35499}
              ]
          },
         {
@@ -337,11 +464,36 @@ var mapData=[{
             type: 'map',
             geoIndex: 0,
             data:[
-                {name:'四川',value:50},
-                {name:'江苏',value:40},
-                {name:'北京',value:95},
-                {name:'广西',value:40},
-                {name:'海南',value:80}
+                {name:'广东',value:73290},
+                 {name:'江苏',value:95390},
+                 {name:'山东',value:67364},
+                 {name:'浙江',value:83923},
+                 {name:'河南',value:42363},
+                 {name:'四川',value:39835},
+                 {name:'湖北',value:55196},
+                 {name:'河北',value:42866},
+                 {name:'湖南',value:46063},
+                 {name:'福建',value:74288},
+                 {name:'上海',value:113719},
+                 {name:'北京',value:114717},
+                 {name:'安徽',value:39257},
+                 {name:'陕西',value:40437},
+                 {name:'内蒙古',value:74203},
+                 {name:'江西',value:40223},
+                 {name:'广西',value:38042},
+                 {name:'天津',value:115617},
+                 {name:'重庆',value:58208},
+                 {name:'黑龙江',value:40365},
+                 {name:'吉林',value:54066},
+                 {name:'云南',value:31357},
+                 {name:'山西',value:35284},
+                 {name:'贵州',value:33274},
+                 {name:'新疆',value:40756},
+                 {name:'甘肃',value:27513},
+                 {name:'海南',value:44405},
+                 {name:'宁夏',value:47165},
+                 {name:'青海',value:43718},
+                 {name:'西藏',value:35499}
              ]
          }];
 series.push(
@@ -349,10 +501,36 @@ series.push(
             type: 'map',
             geoIndex: 0,
             data:[
-                 {name:'上海',value:95},
-                 {name:'广东',value:90},
-                 {name:'辽宁',value:50},
-                 {name:'广西',value:40}
+                 {name:'广东',value:73290},
+                 {name:'江苏',value:95390},
+                 {name:'山东',value:67364},
+                 {name:'浙江',value:83923},
+                 {name:'河南',value:42363},
+                 {name:'四川',value:39835},
+                 {name:'湖北',value:55196},
+                 {name:'河北',value:42866},
+                 {name:'湖南',value:46063},
+                 {name:'福建',value:74288},
+                 {name:'上海',value:113719},
+                 {name:'北京',value:114717},
+                 {name:'安徽',value:39257},
+                 {name:'陕西',value:40437},
+                 {name:'内蒙古',value:74203},
+                 {name:'江西',value:40223},
+                 {name:'广西',value:38042},
+                 {name:'天津',value:115617},
+                 {name:'重庆',value:58208},
+                 {name:'黑龙江',value:40365},
+                 {name:'吉林',value:54066},
+                 {name:'云南',value:31357},
+                 {name:'山西',value:35284},
+                 {name:'贵州',value:33274},
+                 {name:'新疆',value:40756},
+                 {name:'甘肃',value:27513},
+                 {name:'海南',value:44405},
+                 {name:'宁夏',value:47165},
+                 {name:'青海',value:43718},
+                 {name:'西藏',value:35499}
              ]
          })
            
@@ -406,9 +584,9 @@ option1 = {
         min: 0,
         max: 100,
         pieces:[
-                {min: 81,label:'一线城市'},
-                {min: 21, max: 80,label:'21~80 二线城市'},
-                {min: 0, max: 20,label:'0~20 三线城市'},
+                {min: 65000,label:'发达地区'},
+                {min: 40000, max: 64999,label:'中等发达地区'},
+                {min: 0, max: 39999,label:'欠发达地区'},
                 ],
         splitNumber: 3,
         seriesIndex:18,
@@ -416,8 +594,8 @@ option1 = {
         textStyle: {
             color: 'red'
         }
-    },
-    series: series
+    }
+    ,series: series
 };
 if (option1 && typeof option1 === "object") {
     myChart1.setOption(option1, true);
