@@ -1202,13 +1202,6 @@ series.push(
              ]
          })
 option = {
-    title: {
-        text: '习近平出访行程',
-        // subtext: 'from United Nations, Total population, both sexes combined, as of 1 July (thousands)',
-        // sublink: 'http://esa.un.org/wpp/Excel-Data/population.htm',
-        left: 'center',
-        top: 'top'
-    },
     tooltip: {
         trigger: 'item',
         formatter: function (params) {
@@ -1459,7 +1452,86 @@ if (option3 && typeof option3 === "object") {
 }
 }
 
+function c3() {
+var dom = document.getElementById("c4");
+var myChart4 = echarts.init(dom);
+var app = {};
+var	option4 = {
+    tooltip : {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            label: {
+                backgroundColor: '#6a7985'
+            }
+        }
+    },
+    legend: {
+        data:['亚洲','欧洲','美洲','非洲','大洋洲']
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    xAxis : [
+        {
+            type : 'category',
+            boundaryGap : false,
+            data : ['2013','2014','2015','2016','2017']
+        }
+    ],
+    yAxis : [
+        {
+            type : 'value'
+        }
+    ],
+    series : [
+        {
+            name:'亚洲',
+            type:'line',
+            stack: '总量',
+            areaStyle: {normal: {}},
+            data:[6, 5, 6, 6, 1]
+        },
+        {
+            name:'欧洲',
+            type:'line',
+            stack: '总量',
+            areaStyle: {normal: {}},
+            data:[1, 8, 5, 5, 2]
+        },
+        {
+            name:'美洲',
+            type:'line',
+            stack: '总量',
+            areaStyle: {normal: {}},
+            data:[0, 4, 1, 3, 1]
+        },
+        {
+            name:'非洲',
+            type:'line',
+            stack: '总量',
+            areaStyle: {normal: {}},
+            data:[0, 0, 2, 2, 0]
+        },
+        {
+            name:'大洋洲',
+            type:'line',
+            stack: '总量',
+            areaStyle: {normal: {}},
+            data:[0, 3, 0, 0, 0]
+        }
+    ]
+};
+if (option4 && typeof option4 === "object") {
+    myChart4.setOption(option4, true);
+}
+}
+
 china();
 world();
 c1();
 c2();
+c3();
