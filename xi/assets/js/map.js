@@ -1394,6 +1394,72 @@ if (option2 && typeof option2 === "object") {
 }
 }
 
+
+function c2() {
+var dom = document.getElementById("c3");
+var myChart3 = echarts.init(dom);
+var app = {};
+var	option3 = {
+    tooltip : {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            label: {
+                backgroundColor: '#6a7985'
+            }
+        }
+    },
+    legend: {
+        data:['发达国家','发达中国家','欠发达国家']
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    xAxis : [
+        {
+            type : 'category',
+            boundaryGap : false,
+            data : ['2013','2014','2015','2016','2017']
+        }
+    ],
+    yAxis : [
+        {
+            type : 'value'
+        }
+    ],
+    series : [
+        {
+            name:'发达国家',
+            type:'line',
+            stack: '总量',
+            areaStyle: {normal: {}},
+            data:[3, 13, 7, 5, 4]
+        },
+        {
+            name:'发达中国家',
+            type:'line',
+            stack: '总量',
+            areaStyle: {normal: {}},
+            data:[4, 7, 7, 12, 0]
+        },
+        {
+            name:'欠发达国家',
+            type:'line',
+            stack: '总量',
+            areaStyle: {normal: {}},
+            data:[0, 0, 0, 0, 0]
+        }
+    ]
+};
+if (option3 && typeof option3 === "object") {
+    myChart3.setOption(option3, true);
+}
+}
+
 china();
 world();
 c1();
+c2();
