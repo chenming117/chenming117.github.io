@@ -313,7 +313,8 @@ var mapData=[{
                  {name:'海南',value:44405},
                  {name:'宁夏',value:47165},
                  {name:'青海',value:43718},
-                 {name:'西藏',value:35499}
+                 {name:'西藏',value:35499},
+                 {name:'台湾',value:85499}
              ]
          },{
             name: '2013',
@@ -350,7 +351,8 @@ var mapData=[{
                  {name:'海南',value:44405},
                  {name:'宁夏',value:47165},
                  {name:'青海',value:43718},
-                 {name:'西藏',value:35499}
+                 {name:'西藏',value:35499},
+                 {name:'台湾',value:85499}
              ]
          },
          {
@@ -388,7 +390,8 @@ var mapData=[{
                  {name:'海南',value:44405},
                  {name:'宁夏',value:47165},
                  {name:'青海',value:43718},
-                 {name:'西藏',value:35499}
+                 {name:'西藏',value:35499},
+                 {name:'台湾',value:85499}
              ]
          },
          {
@@ -426,7 +429,8 @@ var mapData=[{
                  {name:'海南',value:44405},
                  {name:'宁夏',value:47165},
                  {name:'青海',value:43718},
-                 {name:'西藏',value:35499}
+                 {name:'西藏',value:35499},
+                 {name:'台湾',value:85499}
              ]
          },
          {
@@ -464,7 +468,8 @@ var mapData=[{
                  {name:'海南',value:44405},
                  {name:'宁夏',value:47165},
                  {name:'青海',value:43718},
-                 {name:'西藏',value:35499}
+                 {name:'西藏',value:35499},
+                 {name:'台湾',value:85499}
              ]
          },
         {
@@ -502,7 +507,8 @@ var mapData=[{
                  {name:'海南',value:44405},
                  {name:'宁夏',value:47165},
                  {name:'青海',value:43718},
-                 {name:'西藏',value:35499}
+                 {name:'西藏',value:35499},
+                 {name:'台湾',value:85499}
              ]
          }];
 series.push(
@@ -540,20 +546,14 @@ series.push(
                  {name:'海南',value:44405},
                  {name:'宁夏',value:47165},
                  {name:'青海',value:43718},
-                 {name:'西藏',value:35499}
+                 {name:'西藏',value:35499},
+                 {name:'台湾',value:85499}
              ]
          })
            
                     
            
 option1 = {
-    title: {
-        text: '习近平参观考察行程',
-        // subtext: 'from United Nations, Total population, both sexes combined, as of 1 July (thousands)',
-        // sublink: 'http://esa.un.org/wpp/Excel-Data/population.htm',
-        left: 'center',
-        top: 'top'
-    },
     tooltip: {
         trigger: 'item',
         formatter: function (params) {
