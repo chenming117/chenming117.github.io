@@ -1346,10 +1346,10 @@ var	option2 = {
         bottom: '3%',
         containLabel: true
     },
+    color:['#F7D597','#BA9E6A','#6ABA6D'],
     xAxis : [
         {
             type : 'category',
-            boundaryGap : false,
             data : ['2012','2013','2014','2015','2016','2017']
         }
     ],
@@ -1361,21 +1361,21 @@ var	option2 = {
     series : [
         {
             name:'发达地区',
-            type:'line',
+            type:'bar',
             stack: '总量',
             areaStyle: {normal: {}},
             data:[3, 3, 6, 1, 0, 3]
         },
         {
             name:'中等发达地区',
-            type:'line',
+            type:'bar',
             stack: '总量',
             areaStyle: {normal: {}},
             data:[0, 3, 3, 1, 2, 1]
         },
         {
             name:'欠发达地区',
-            type:'line',
+            type:'bar',
             stack: '总量',
             areaStyle: {normal: {}},
             data:[0, 2, 0, 2, 1, 1]
@@ -1402,6 +1402,7 @@ var	option3 = {
             }
         }
     },
+    color:['#F7D597','#91E5FF','#B291FF'],
     legend: {
         data:['发达国家','发达中国家','欠发达国家']
     },
@@ -1414,7 +1415,6 @@ var	option3 = {
     xAxis : [
         {
             type : 'category',
-            boundaryGap : false,
             data : ['2013','2014','2015','2016','2017']
         }
     ],
@@ -1426,21 +1426,21 @@ var	option3 = {
     series : [
         {
             name:'发达国家',
-            type:'line',
+            type:'bar',
             stack: '总量',
             areaStyle: {normal: {}},
             data:[3, 13, 7, 5, 4]
         },
         {
             name:'发达中国家',
-            type:'line',
+            type:'bar',
             stack: '总量',
             areaStyle: {normal: {}},
             data:[4, 7, 7, 12, 0]
         },
         {
             name:'欠发达国家',
-            type:'line',
+            type:'bar',
             stack: '总量',
             areaStyle: {normal: {}},
             data:[0, 0, 0, 0, 0]
@@ -1466,6 +1466,7 @@ var	option4 = {
             }
         }
     },
+    color:['#F5CB7D','#FFEECF','#A88645','#4591A8','#72D7F8'],
     legend: {
         data:['亚洲','欧洲','美洲','非洲','大洋洲']
     },
@@ -1478,7 +1479,6 @@ var	option4 = {
     xAxis : [
         {
             type : 'category',
-            boundaryGap : false,
             data : ['2013','2014','2015','2016','2017']
         }
     ],
@@ -1490,37 +1490,67 @@ var	option4 = {
     series : [
         {
             name:'亚洲',
-            type:'line',
+            type:'bar',
             stack: '总量',
             areaStyle: {normal: {}},
+            label: {
+                normal: {
+                    show: true,
+                    position: 'insideRight'
+                }
+            },
             data:[6, 5, 6, 6, 1]
         },
         {
             name:'欧洲',
-            type:'line',
+            type:'bar',
             stack: '总量',
             areaStyle: {normal: {}},
+            label: {
+                normal: {
+                    show: true,
+                    position: 'insideRight'
+                }
+            },
             data:[1, 8, 5, 5, 2]
         },
         {
             name:'美洲',
-            type:'line',
+            type:'bar',
             stack: '总量',
             areaStyle: {normal: {}},
+            label: {
+                normal: {
+                    show: true,
+                    position: 'insideRight'
+                }
+            },
             data:[0, 4, 1, 3, 1]
         },
         {
             name:'非洲',
-            type:'line',
+            type:'bar',
             stack: '总量',
             areaStyle: {normal: {}},
+            label: {
+                normal: {
+                    show: true,
+                    position: 'insideRight'
+                }
+            },
             data:[0, 0, 2, 2, 0]
         },
         {
             name:'大洋洲',
-            type:'line',
+            type:'bar',
             stack: '总量',
             areaStyle: {normal: {}},
+            label: {
+                normal: {
+                    show: true,
+                    position: 'insideRight'
+                }
+            },
             data:[0, 3, 0, 0, 0]
         }
     ]
